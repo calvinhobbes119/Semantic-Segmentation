@@ -14,7 +14,7 @@ For this project I made the following changes to the starter code.
 __*main.py*__
 
 1. I modified the _load_vgg_ method to return the tensors associated with the input image, and the outputs of layer 3, 4 and 7.
-2. I modified the _layers_ method to implement the decoder for the fully convolutional network. The topology of the full network is shown below.
+2. I modified the _layers_ method to implement the decoder for the fully convolutional network. The topology of the full network is shown below. Observe the transposed convolution nodes and skip layer connections in the decoder portion of the network.
 
 ![Network Graph](https://github.com/calvinhobbes119/Semantic-Segmentation/blob/master/Network_Graph.png)
 
