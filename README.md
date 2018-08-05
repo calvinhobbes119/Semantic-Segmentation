@@ -13,13 +13,13 @@ For this project I made the following changes to the starter code.
 
 __*main.py*__
 
-1. I modified the _load_vgg_ method to return the tensors associated with the input image, and the outputs of layer 3, 4 and 7.
+1. I modified the _load_vgg_ method to return the tensors associated with the input image, and the outputs of layer 3, 4 and 7 of the VGG network.
 2. I modified the _layers_ method to implement the decoder for the fully convolutional network. The topology of the full network is shown below. Observe the transposed convolution nodes and skip layer connections in the decoder portion of the network.
 
 ![Network Graph](https://github.com/calvinhobbes119/Semantic-Segmentation/blob/master/Network_Graph.png)
 
 3. I implemented the _optimize_ method to compute the total loss which comprises of both the cross-entropy loss and L2 regularization loss. The training operation is performed by an Adam Optimizer with a tuning hyperparameter of 0.0001.
-4. Finally, I implemented the _train_nn_ method to initalize a TensorFlow session, and perform SGD using a minibatch size of 5 samples, and 50 training epochs. I also experimented with 10 and 25 epochs, but settled on 50 epochs based on performance. The total loss for the final selection of minibatch size and epochs is shown below.
+4. Finally, I implemented the _train_nn_ method to initalize a TensorFlow session, and perform SGD using a minibatch size of 5 samples, and 50 training epochs. I also experimented with 10 and 25 epochs, but settled on 50 epochs based on performance. The total loss for the final selection of minibatch size of 5 and 50 training epochs is shown below.
 
 ![Network Loss](https://github.com/calvinhobbes119/Semantic-Segmentation/blob/master/Network_Loss.png)
 
