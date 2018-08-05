@@ -29,3 +29,4 @@ The performance results for 10, 25 and 50 epochs of training is shown below. As 
 
 ![Network Performance](https://github.com/calvinhobbes119/Semantic-Segmentation/blob/master/Performance.bmp)
 
+The outputs for all test samples for 50 epochs is stored within _runs/_ folder.
