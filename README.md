@@ -25,4 +25,7 @@ __*main.py*__
 
 __*Results*__
 
+The performance results for 10, 25 and 50 epochs of training is shown below. As the number of epochs increases the accuracy of the detection increases, as well as the smoothness of the boundaries between road and non-road pixels increases.
+
+![Network Performance](https://github.com/calvinhobbes119/Semantic-Segmentation/blob/master/Performance.bmp)
 
